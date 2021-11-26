@@ -1,9 +1,11 @@
 def calc_fibonacci(n):
-  if n == 0:
-    return 0
-  elif n == 1:
-    return 1
-  return calc_fibonacci(n-1) + calc_fibonacci(n-2)
+  f = []
+  for i in range(n+1):
+    if i == 0 or i == 1:
+      f.append(i)
+    else:
+      f.append(f[i-1] + f[i-2])
+  return f[-1]
 
 num = int(input("数値を入力してください "))
 
