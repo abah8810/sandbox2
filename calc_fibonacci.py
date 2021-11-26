@@ -5,5 +5,7 @@ def calc_fibonacci(n):
     return 1
   return calc_fibonacci(n-1) + calc_fibonacci(n-2)
 
-for i in range(11):
+num = int(input("数値を入力してください"))
+
+for i in range(num):
   print(i, calc_fibonacci(i))
